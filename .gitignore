@@ -1,0 +1,15 @@
+# Reddit credentials — never commit
+reddit_config.json
+
+# Data archive — kept local
+data/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# OS
+.DS_Store
+Thumbs.db
