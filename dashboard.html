@@ -173,7 +173,7 @@ a:hover{text-decoration:underline}
   <div class="digest" id="digestWrap">
     <div class="digest-toggle" onclick="toggleDigest()">
       <span class="digest-tag">AI WEEKLY DIGEST</span>
-      <span class="digest-meta" id="digestMeta">Loading...</span>
+      <span class="digest-meta" id="digestMeta">Aug 13–Aug 19, 2026 · 0 mentions on file</span>
       <span class="digest-sub" id="digestSub">Click to expand</span>
       <span class="digest-chevron" id="digestChevron">&#9660;</span>
     </div>
@@ -236,19 +236,9 @@ const BRAND_ORDER = ["arena-club","courtyard","rbt","icybox"];
 
 const MENTIONS = [];
 
-const SENTIMENT = {
-  "arena-club": {"pos":0,"neu":0,"neg":0,"total":0},
-  "courtyard":  {"pos":0,"neu":0,"neg":0,"total":0},
-  "rbt":        {"pos":0,"neu":0,"neg":0,"total":0},
-  "icybox":     {"pos":0,"neu":0,"neg":0,"total":0}
-};
+const SENTIMENT = {"arena-club": {"pos": 0, "neu": 0, "neg": 100, "total": 0}, "courtyard": {"pos": 0, "neu": 0, "neg": 100, "total": 0}, "rbt": {"pos": 0, "neu": 0, "neg": 100, "total": 0}, "icybox": {"pos": 0, "neu": 0, "neg": 100, "total": 0}};
 
-const SUBREDDITS = {
-  "arena-club": {},
-  "courtyard":  {},
-  "rbt":        {},
-  "icybox":     {}
-};
+const SUBREDDITS = {"arena-club": {}, "courtyard": {}, "rbt": {}, "icybox": {}};
 
 const HOT_POSTS = [];
 
@@ -257,21 +247,76 @@ const CREATORS = [];
 const AD_OPPS = [];
 
 const WEEKLY_DIGEST = {
-  "week": "Loading...",
+  "week": "Aug 13–Aug 19, 2026",
   "total_new": 0,
   "arena_club": {
-    "new_mentions": 0, "total_mentions": 0,
-    "sentiment": {"pos":0,"neu":0,"neg":0,"total":0},
+    "new_mentions": 0,
+    "total_mentions": 0,
+    "sentiment": {
+      "pos": 0,
+      "neu": 0,
+      "neg": 100,
+      "total": 0
+    },
     "sentiment_delta": {},
-    "top_subreddit": null, "creator_count": 0, "ad_opps": 0, "best_post": null
+    "top_subreddit": null,
+    "creator_count": 0,
+    "ad_opps": 0,
+    "best_post": null
   },
   "competitors": {
-    "courtyard": {"new_mentions":0,"total_mentions":0,"sentiment":{"pos":0,"neu":0,"neg":0,"total":0},"sentiment_delta":{},"top_subreddit":null,"creator_count":0,"ad_opps":0,"best_post":null},
-    "rbt":       {"new_mentions":0,"total_mentions":0,"sentiment":{"pos":0,"neu":0,"neg":0,"total":0},"sentiment_delta":{},"top_subreddit":null,"creator_count":0,"ad_opps":0,"best_post":null},
-    "icybox":    {"new_mentions":0,"total_mentions":0,"sentiment":{"pos":0,"neu":0,"neg":0,"total":0},"sentiment_delta":{},"top_subreddit":null,"creator_count":0,"ad_opps":0,"best_post":null}
+    "courtyard": {
+      "new_mentions": 0,
+      "total_mentions": 0,
+      "sentiment": {
+        "pos": 0,
+        "neu": 0,
+        "neg": 100,
+        "total": 0
+      },
+      "sentiment_delta": {},
+      "top_subreddit": null,
+      "creator_count": 0,
+      "ad_opps": 0,
+      "best_post": null
+    },
+    "rbt": {
+      "new_mentions": 0,
+      "total_mentions": 0,
+      "sentiment": {
+        "pos": 0,
+        "neu": 0,
+        "neg": 100,
+        "total": 0
+      },
+      "sentiment_delta": {},
+      "top_subreddit": null,
+      "creator_count": 0,
+      "ad_opps": 0,
+      "best_post": null
+    },
+    "icybox": {
+      "new_mentions": 0,
+      "total_mentions": 0,
+      "sentiment": {
+        "pos": 0,
+        "neu": 0,
+        "neg": 100,
+        "total": 0
+      },
+      "sentiment_delta": {},
+      "top_subreddit": null,
+      "creator_count": 0,
+      "ad_opps": 0,
+      "best_post": null
+    }
   },
-  "ad_impact": "",
-  "top_actions": [],
+  "ad_impact": "Courtyard holds at 100% negative sentiment on Reddit. Their churning community members are actively searching for alternatives — target Courtyard brand keywords.",
+  "top_actions": [
+    "Drop an organic value post in r/tradingcards or r/basketballcards — a thread about Buyback economics or a 'how AC works' explainer builds community credibility.",
+    "IcyBox is at 100% negative Reddit sentiment. Find threads where users are complaining about them and add a genuine, helpful comparison — this community-level retargeting is free and highly effective.",
+    "Review the 0 creator-signal posts in the Insights tab. If any are from active YouTubers or TikTokers in the card space, DM them about a partnership before a competitor does."
+  ],
   "top_post_week": null
 };
 
